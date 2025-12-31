@@ -13,7 +13,8 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "*"
+  origin: "https://ganesh-portfolio-frontend.vercel.app", 
+  methods: ["GET", "POST"]
 }));
 app.use(express.json());
 
